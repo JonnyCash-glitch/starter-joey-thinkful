@@ -1,0 +1,54 @@
+body, header {
+    margin: 0;
+    padding: 0;
+    background-color: #0B1C51; /* Dark blue background */
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    text-align: center; /* Center the content */
+}
+
+header h1 {
+    color: white;
+    font-size: 52px; /* Mobile title font size */
+    margin: 0; /* Remove default margin */
+    padding: 20px 0; /* Add some padding for spacing */
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack links vertically for mobile */
+    align-items: center; /* Center-align the menu items for mobile */
+    margin: 0; /* Remove default margin */
+}
+
+#menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700; /* Montserrat bold */
+    padding: 10px 20px; /* Add padding for tap targets */
+    display: block; /* Make the links take up full space for easier clicking */
+}
+
+/* Responsive adjustments for desktop views */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 48px; /* Desktop title font size */
+    }
+
+    #menu {
+        flex-direction: row; /* Align links horizontally for desktop */
+        justify-content: center; /* Center the menu items */
+    }
+
+    #menu li {
+        margin: 0 10px; /* Add some horizontal spacing between links */
+    }
+
+    #menu li a {
+        padding: 5px 10px; /* Adjust padding for desktop */
+    }
+}
